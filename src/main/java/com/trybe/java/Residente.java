@@ -38,8 +38,7 @@ public class Residente {
   }
 
   /**
-   * Getter's e Setter's
-   * Métodos `nome`, `idade`, `peso` e `altura`.
+   * Getter's e Setter's Métodos `nome`, `idade`, `peso` e `altura`.
    */
   public String getNome() {
     return nome;
@@ -72,5 +71,14 @@ public class Residente {
   public void setAltura(double altura) {
     this.altura = altura;
   }
-}
 
+  /**
+   * Método `imc`. Calcula o IMC do residente.
+   *
+   * @return IMC do residente.
+   */
+
+  public double calculaImc() {
+    return this.peso / (this.altura * this.altura);
+  }
+}
