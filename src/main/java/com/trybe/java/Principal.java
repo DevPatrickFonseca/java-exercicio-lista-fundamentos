@@ -27,8 +27,9 @@ public class Principal {
             + "\n"
             + "\nIMC: " + h
             + "\n"
-            + "\nConectado: " + (conectado ?
-            "Conectado à Internet" : "Falha na conexão à Internet")
+            + "\nConectado: " + (
+            conectado ? "Conectado à Internet" : "Falha na conexão à Internet"
+        )
             + "\n"
             + "\nNome do Estado: " + nomeEstado
     );
