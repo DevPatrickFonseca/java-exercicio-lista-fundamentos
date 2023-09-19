@@ -35,11 +35,14 @@ Este exercício visa explorar e praticar conceitos fundamentais de programação
 	```bash
 	git clone git@github.com:PFonsecaFV/java-exercicio-lista-fundamentos.git
 	```
-3. Acesse o diretório do projeto e instale suas dependências:
+3. Acesse o diretório do projeto:
 	```bash
-	cd java-exercicio-lista-fundamentos && nvm install
+	cd java-exercicio-lista-fundamentos
 	```
-
+4. Instale suas dependências:
+	```bash
+	mvn install
+	```
 
 ## ✅ O que foi desenvolvido
 
