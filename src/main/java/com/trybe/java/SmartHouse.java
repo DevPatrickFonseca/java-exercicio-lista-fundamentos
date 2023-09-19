@@ -1,5 +1,8 @@
 package com.trybe.java;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Classe SmartHouse.
  */
@@ -8,6 +11,7 @@ public class SmartHouse {
 
   private boolean lampadaLigada;
   private Residente residente;
+  private Map<String, String> estadosBrasileiros;
 
   /**
    * Construtor da classe SmartHouse.
@@ -58,5 +62,18 @@ public class SmartHouse {
     }
 
     return false;
+  }
+
+  /**
+   * Métodos `estadosBrasileiros`.
+   */
+
+  public String mostraNomeEstado(String sigla) {
+    Map<String, String> estadosBrasileiros = new HashMap<>();
+    estadosBrasileiros.put("PE", "Pernambuco");
+    estadosBrasileiros.put("SC", "Santa Catarina");
+    estadosBrasileiros.put("AM", "Amazonas");
+
+    return estadosBrasileiros.get(sigla);
   }
 }

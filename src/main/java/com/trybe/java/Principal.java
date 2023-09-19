@@ -18,6 +18,7 @@ public class Principal {
 
     double h = residente.calculaImc();
     boolean conectado = casa.conectarInternet();
+    String nomeEstado = casa.mostraNomeEstado("PE");
 
     System.out.println(
         "Nome: " + residente.getNome() + "\nIdade: " + residente.getIdade() + "\nPeso: "
@@ -26,6 +27,10 @@ public class Principal {
             + "\n"
             + "\nIMC: " + h
             + "\n"
-            + "\nConectado: " + (conectado ? "Conectado à Internet" : "Falha na conexão à Internet"));
+            + "\nConectado: " + (conectado ?
+            "Conectado à Internet" : "Falha na conexão à Internet")
+            + "\n"
+            + "\nNome do Estado: " + nomeEstado
+    );
   }
 }
