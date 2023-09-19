@@ -18,8 +18,7 @@ public class SmartHouse {
   }
 
   /**
-   * Getter's e Setter's
-   * Métodos `ligarLampada` e `desligarLampada`.
+   * Getter's e Setter's Métodos `ligarLampada` e `desligarLampada`.
    */
   public void ligarLampada() {
     lampadaLigada = true;
@@ -34,8 +33,7 @@ public class SmartHouse {
   }
 
   /**
-   * Getter's e Setter's
-   * Métodos `Residente`.
+   * Getter's e Setter's Métodos `Residente`.
    */
 
   public Residente getResidente() {
@@ -44,5 +42,21 @@ public class SmartHouse {
 
   public void setResidente(Residente residente) {
     this.residente = residente;
+  }
+
+  /**
+   * Método `conectarInternet`.
+   */
+
+  public boolean conectarInternet() {
+    for (int i = 0; i < 3; i++) {
+      double randomValue = Math.random();
+
+      if (randomValue < 0.5) {
+        return true;
+      }
+    }
+
+    return false;
   }
 }
