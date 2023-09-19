@@ -41,7 +41,7 @@ Este exercício visa explorar e praticar conceitos fundamentais de programação
 	```
 
 
-## ✅O que foi desenvolvido
+## ✅ O que foi desenvolvido
 
 1. **Controle da Lâmpada:**
    - Métodos `ligarLampada` e `desligarLampada` para controlar o estado da lâmpada.
@@ -60,6 +60,13 @@ Este exercício visa explorar e praticar conceitos fundamentais de programação
 5. **Reconhecimento de Estados:**
    - Utilizei um Map para associar siglas de estados a seus nomes completos.
    - Implementei o método `mostraNomeEstado` para imprimir o nome do estado com base na sigla.
+
+## 🛠️ Testes
+
+Para executar todos os testes basta rodar o comando:
+```bash
+mvn test
+```
 
 ---
 
